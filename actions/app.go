@@ -5,12 +5,12 @@ import (
 	"github.com/gobuffalo/buffalo/middleware"
 	"github.com/gobuffalo/buffalo/middleware/ssl"
 	"github.com/gobuffalo/envy"
+	"github.com/tahkapaa/coke/models"
 	"github.com/unrolled/secure"
 
 	"github.com/gobuffalo/buffalo/middleware/csrf"
 	"github.com/gobuffalo/buffalo/middleware/i18n"
 	"github.com/gobuffalo/packr"
-	"github.com/tahkapaa/test_stuff/buffalo/coke/models"
 )
 
 // ENV is used to help switch settings based on where the
@@ -49,6 +49,7 @@ func App() *buffalo.App {
 
 		app.GET("/", HomeHandler)
 
+		app.GET("/test/testhandler", TestTesthandler)
 		app.ServeFiles("/", assetsBox) // serve files from the public directory
 	}
 
