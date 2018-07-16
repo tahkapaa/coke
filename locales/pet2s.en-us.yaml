@@ -1,0 +1,6 @@
+- id: "pet2.created.success"
+  translation: "Pet2 was successfully created."
+- id: "pet2.updated.success"
+  translation: "Pet2 was successfully updated."
+- id: "pet2.destroyed.success"
+  translation: "Pet2 was successfully destroyed."
