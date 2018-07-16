@@ -1,0 +1,6 @@
+- id: "horse.created.success"
+  translation: "Horse was successfully created."
+- id: "horse.updated.success"
+  translation: "Horse was successfully updated."
+- id: "horse.destroyed.success"
+  translation: "Horse was successfully destroyed."

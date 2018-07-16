@@ -1,0 +1,22 @@
+<div class="page-header">
+  <h1>Horse#Show</h1>
+</div>
+
+<ul class="list-unstyled list-inline">
+  <li class="list-inline-item"><a href="<%= horsesPath() %>" class="btn btn-info">Back to all Horses</a></li>
+  <li class="list-inline-item"><a href="<%= editHorsePath({ horse_id: horse.ID })%>" class="btn btn-warning">Edit</a></li>
+  <li class="list-inline-item"><a href="<%= horsePath({ horse_id: horse.ID })%>" data-method="DELETE" data-confirm="Are you sure?" class="btn btn-danger">Destroy</a>
+</ul>
+
+<p>
+  <strong>Name</strong>: <%= horse.Name %>
+</p>
+<p>
+  <strong>Age</strong>: <%= horse.Age %>
+</p>
+<p>
+  <strong>Race</strong>: <%= horse.Race %>
+</p>
+<p>
+  <strong>Profession</strong>: <%= horse.Profession %>
+</p>

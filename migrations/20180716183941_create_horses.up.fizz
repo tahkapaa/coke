@@ -1,0 +1,7 @@
+create_table("horses", func(t) {
+	t.Column("id", "uuid", {"primary": true})
+	t.Column("name", "string", {})
+	t.Column("age", "integer", {})
+	t.Column("race", "string", {})
+	t.Column("profession", "string", {})
+})
